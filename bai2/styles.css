@@ -288,31 +288,4 @@ footer p {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-
-  .intro {
-    padding: 1.5rem;
-  }
-
-  .intro h2,
-  .products h2 {
-    font-size: 1.3rem;
-  }
-
-  .intro p {
-    font-size: 0.9rem;
-  }
-
-  .product-card img {
-    height: 200px;
-  }
-
-  .contact {
-    padding: 1.5rem;
-  }
-
-  .product-card button {
-    padding: 0.6rem 1rem;
-    margin: 0.8rem;
-    font-size: 0.85rem;
-  }
 }
