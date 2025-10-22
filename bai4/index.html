@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BK Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white pt-5 text-gray-900">
+    <!-- Header -->
+    <header
+      class="bg-gray-900 text-white sticky top-0 z-50 bg-puple-600 border-b border-gray-200 shadow-sm"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <h1 class="text-2xl font-bold text-blue-500">BK Shop</h1>
+          <nav>
+            <ul class="flex gap-8">
+              <li>
+                <a href="#home" class="hover:text-blue-500 transition-colors font-medium"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="#products" class="hover:text-blue-500 transition-colors font-medium"
+                  >Sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-500 transition-colors font-medium"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Giới thiệu -->
+      <section id="home" class="py-16 sm:py-20">
+        <div
+          class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 sm:p-12 text-center border-2 border-gray-200 rounded-2xl mb-16 shadow-sm"
+        >
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Chào mừng đến với BK Shop
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Chúng tôi cung cấp các loại sách chất lượng cao với giá cả phải chăng. Khám phá bộ sưu
+            tập sách đa dạng của chúng tôi ngay hôm nay!
+          </p>
+        </div>
+      </section>
+
+      <section id="search" class="py-16 sm:py-20">
+        <form class="mx-auto w-full">
+          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only"
+            >Search</label
+          >
+          <div class="relative w-full">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg
+                class="w-4 h-4 text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="search"
+              id="search-input"
+              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Search product..."
+              required
+            />
+            <button
+              id="search-btn"
+              type="submit"
+              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Thêm nút "Thêm sản phẩm" để mở form -->
+      <section id="add-product-section" class="py-8 sm:py-12 flex justify-center">
+        <button
+          id="add-product-btn"
+          class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+        >
+          + Thêm sản phẩm
+        </button>
+      </section>
+
+      <!-- Form thêm sản phẩm mới (ẩn mặc định) -->
+      <section id="add-product-form-section" class="py-8 sm:py-12 hidden">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 p-8 sm:p-12">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Thêm sản phẩm mới</h2>
+          <form id="addProductForm" class="space-y-6">
+            <div>
+              <label for="newName" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Tên sản phẩm:</label
+              >
+              <input
+                type="text"
+                id="newName"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                placeholder="Nhập tên sản phẩm"
+              />
+            </div>
+
+            <div>
+              <label for="newPrice" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Giá (VND):</label
+              >
+              <input
+                type="number"
+                id="newPrice"
+                required
+                min="1"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                placeholder="Nhập giá sản phẩm"
+              />
+            </div>
+
+            <div>
+              <label for="newDesc" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Mô tả:</label
+              >
+              <textarea
+                id="newDesc"
+                rows="4"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                placeholder="Nhập mô tả sản phẩm"
+              ></textarea>
+            </div>
+
+            <!-- Thông báo lỗi -->
+            <p id="errorMsg" class="text-red-600 font-medium hidden"></p>
+
+            <div class="flex gap-4">
+              <button
+                type="submit"
+                class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+              >
+                Thêm
+              </button>
+              <button
+                type="button"
+                id="cancelBtn"
+                class="flex-1 bg-gray-400 hover:bg-gray-500 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+              >
+                Hủy
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Danh sách sản phẩm -->
+      <section id="products" class="py-16 sm:py-20">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">
+          Sản phẩm nổi bật
+        </h2>
+        <div
+          id="product-list"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8"
+        ></div>
+      </section>
+
+      <!-- Form liên hệ -->
+      <section id="contact" class="py-16 sm:py-20">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 p-8 sm:p-12">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Liên hệ với chúng tôi</h2>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Tên của bạn:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                placeholder="Nhập tên của bạn"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                placeholder="Nhập email của bạn"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Nội dung:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                placeholder="Nhập nội dung tin nhắn của bạn"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+            >
+              Gửi
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center space-y-2">
+          <p class="text-sm">2025 BK Shop. Địa chỉ: Số 1 Đại Cồ Việt, Thành phố Hà Nội</p>
+          <p class="text-sm">Liên hệ: 0123-456-789 | Email: info@langtien.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./data.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
