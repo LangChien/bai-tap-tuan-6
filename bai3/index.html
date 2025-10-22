@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BK Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white pt-5 text-gray-900">
+    <!-- Header -->
+    <header
+      class="bg-gray-900 text-white sticky top-0 z-50 bg-puple-600 border-b border-gray-200 shadow-sm"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <h1 class="text-2xl font-bold text-blue-500">BK Shop</h1>
+          <nav>
+            <ul class="flex gap-8">
+              <li>
+                <a href="#home" class="hover:text-blue-500 transition-colors font-medium"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="#products" class="hover:text-blue-500 transition-colors font-medium"
+                  >Sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-500 transition-colors font-medium"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Giới thiệu -->
+      <section id="home" class="py-16 sm:py-20">
+        <div
+          class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 sm:p-12 text-center border-2 border-gray-200 rounded-2xl mb-16 shadow-sm"
+        >
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Chào mừng đến với BK Shop
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Chúng tôi cung cấp các loại sách chất lượng cao với giá cả phải chăng. Khám phá bộ sưu
+            tập sách đa dạng của chúng tôi ngay hôm nay!
+          </p>
+        </div>
+      </section>
+
+      <!-- Danh sách sản phẩm -->
+      <section id="products" class="py-16 sm:py-20">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">
+          Sản phẩm nổi bật
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Product Card 1 -->
+          <article
+            class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 group"
+          >
+            <div class="h-56 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
+              <img
+                src="./image.jpg"
+                alt="Sách Lập trình Python"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Sách Lập trình Python</h3>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                Cuốn sách hướng dẫn lập trình Python từ cơ bản đến nâng cao, phù hợp cho người mới
+                bắt đầu.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-blue-600">150,000 VNĐ</span>
+                <button
+                  class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                >
+                  Mua
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article
+            class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 group"
+          >
+            <div class="h-56 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
+              <img
+                src="./image.jpg"
+                alt="Sách Tiểu thuyết Kiếp ngoài hành tinh"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Sách Tiểu thuyết Kiếp ngoài hành tinh
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                Một tác phẩm văn học kinh điển, kể về cuộc phiêu lưu đầy kỳ thú của nhân vật chính.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-blue-600">120,000 VNĐ</span>
+                <button
+                  class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                >
+                  Mua
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article
+            class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 group"
+          >
+            <div class="h-56 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
+              <img
+                src="./image.jpg"
+                alt="Sách Tâm lý học ứng dụng"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Sách Tâm lý học ứng dụng</h3>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                Khám phá những bí mật của tâm lý con người và cách áp dụng vào cuộc sống hàng ngày.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-blue-600">180,000 VNĐ</span>
+                <button
+                  class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                >
+                  Mua
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Form liên hệ -->
+      <section id="contact" class="py-16 sm:py-20">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 p-8 sm:p-12">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Liên hệ với chúng tôi</h2>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Tên của bạn:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                placeholder="Nhập tên của bạn"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                placeholder="Nhập email của bạn"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-900 mb-2"
+                >Nội dung:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                placeholder="Nhập nội dung tin nhắn của bạn"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+            >
+              Gửi
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center space-y-2">
+          <p class="text-sm">2025 BK Shop. Địa chỉ: Số 1 Đại Cồ Việt, Thành phố Hà Nội</p>
+          <p class="text-sm">Liên hệ: 0123-456-789 | Email: info@langtien.com</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
