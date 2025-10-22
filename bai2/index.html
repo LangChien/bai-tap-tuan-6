@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa hàng Sách Lăng Tiến</title>
+    <!-- Thêm link CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Thêm container wrapper cho header -->
+      <div class="header-container">
+        <h1>Cửa hàng Sách Lăng Tiến</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#products">Sản phẩm</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Giới thiệu -->
+      <!-- Thêm class intro -->
+      <section id="home" class="intro">
+        <h2>Chào mừng đến với Cửa hàng Sách Lăng Tiến</h2>
+        <p>
+          Chúng tôi cung cấp các loại sách chất lượng cao với giá cả phải chăng. Khám phá bộ sưu tập
+          sách đa dạng của chúng tôi ngay hôm nay!
+        </p>
+      </section>
+
+      <!-- Danh sách sản phẩm -->
+      <!-- Thêm class products và products-grid -->
+      <section id="products" class="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="products-grid">
+          <!-- Thêm class product-card cho mỗi sản phẩm -->
+          <article class="product-card">
+            <img
+              src="https://salt.tikicdn.com/ts/product/38/40/88/b962e19641b05c06324b416c6aa5d38b.jpg"
+              alt="Sách Lập trình Python"
+            />
+            <h3>Sách Lập trình Python</h3>
+            <p>
+              Cuốn sách hướng dẫn lập trình Python từ cơ bản đến nâng cao, phù hợp cho người mới bắt
+              đầu.
+            </p>
+            <p class="price">150,000 VNĐ</p>
+            <button>Thêm vào giỏ</button>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://salt.tikicdn.com/ts/product/38/40/88/b962e19641b05c06324b416c6aa5d38b.jpg"
+              alt="Sách Tiểu thuyết Kiếp ngoài hành tinh"
+            />
+            <h3>Sách Tiểu thuyết Kiếp ngoài hành tinh</h3>
+            <p>
+              Một tác phẩm văn học kinh điển, kể về cuộc phiêu lưu đầy kỳ thú của nhân vật chính.
+            </p>
+            <p class="price">120,000 VNĐ</p>
+            <button>Thêm vào giỏ</button>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://salt.tikicdn.com/ts/product/38/40/88/b962e19641b05c06324b416c6aa5d38b.jpg"
+              alt="Sách Tâm lý học ứng dụng"
+            />
+            <h3>Sách Tâm lý học ứng dụng</h3>
+            <p>
+              Khám phá những bí mật của tâm lý con người và cách áp dụng vào cuộc sống hàng ngày.
+            </p>
+            <p class="price">180,000 VNĐ</p>
+            <button>Thêm vào giỏ</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Form liên hệ -->
+      <!-- Thêm class contact -->
+      <section id="contact" class="contact">
+        <h2>Liên hệ với chúng tôi</h2>
+        <form>
+          <!-- Thêm class form-group -->
+          <div class="form-group">
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <!-- Thêm class submit-btn -->
+          <button type="submit" class="submit-btn">Gửi</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>2025 Cửa hàng Sách Lăng Tiến. Địa chỉ: Số 1 Đại Cồ Việt, Thành phố Hà Nội</p>
+      <p>Liên hệ: 0123-456-789 | Email: info@langtien.com</p>
+    </footer>
+  </body>
+</html>
